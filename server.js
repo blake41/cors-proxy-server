@@ -11,7 +11,8 @@ cors_proxy.createServer({
       console.log(req)
       console.log(res)
       return false
-    }
+    },
+    removeHeaders: ['origin', 'referer']
 }).listen(port, host, function() {
     console.log('Running blake CORS Anywhere on ' + host + ':' + port);
 })
