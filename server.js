@@ -7,6 +7,7 @@ var cors_proxy = require('cors-anywhere');
 cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
     handleInitialRequest: function(req, res, url) {
+      debugger
       console.log(req)
       console.log(res)
       return false
