@@ -13,5 +13,5 @@ cors_proxy.createServer({
       return false
     }
 }).listen(port, host, function() {
-    console.log('Running CORS Anywhere on ' + host + ':' + port);
+    console.log('Running blake CORS Anywhere on ' + host + ':' + port);
 });
