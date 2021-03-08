@@ -10,7 +10,7 @@ cors_proxy.createServer({
       debugger
       console.log(req)
       console.log(res)
-      return true
+      return false
     }
 }).listen(port, host, function() {
     console.log('Running blake CORS Anywhere on ' + host + ':' + port);
