@@ -5,11 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node --inspect server.js" 
+    "start": "node --inspect server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors-anywhere": "^0.4.3"
+    "cors-anywhere": "git://github.com/Rob--W/cors-anywhere.git#9f1af824"
   }
 }
