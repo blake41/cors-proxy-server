@@ -6,6 +6,11 @@ var port = process.env.PORT || 8080;
 var cors_proxy = require('cors-anywhere');
 cors_proxy.createServer({
     originWhitelist: [], // Allow all origins
+    handleInitialRequest: function(req, res, url) {
+      console.log(req)
+      console.log(res)
+      return false
+    }
 }).listen(port, host, function() {
     console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
