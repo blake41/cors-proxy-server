@@ -5,11 +5,9 @@ var port = process.env.PORT || 8080;
 
 var cors_proxy = require('cors-anywhere');
 cors_proxy.createServer({
-    originWhitelist: ['https://significant-trades-qi9oyshz5-blake41.vercel.app/'], // Allow all origins
+    originWhitelist: ['https://significant-trades-blake41.vercel.app', 'http://localhost:3000'], // Allow all origins
     handleInitialRequest: function(req, res, url) {
       console.log(url)
-      console.log(req)
-      console.log(res)
       return false
     },
     removeHeaders: ['origin', 'referer']
