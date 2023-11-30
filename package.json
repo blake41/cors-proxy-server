@@ -9,6 +9,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "cors-anywhere": "git://github.com/Rob--W/cors-anywhere.git#9f1af824"
   }
